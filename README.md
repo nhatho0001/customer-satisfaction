@@ -33,9 +33,9 @@ def train_pipeline(path: str , model_type: str = "lightgbm"):
     is_promoted = model_promoter(mse = mse)
     return model , is_promoted
 ```
-![run_pipeline](data\training_pipeline.png)
+![run_pipeline](_assets\continuous_deployment.png)
 ### Deployment Pipeline
 - `model_loader`: The step loads the `production` model from the zenml model registry.
 - `model_deployer`: This step deploys the model as a service using MLflow (if deployment criteria is met).
 
-![deployment](data\continuous_deployment.png)
+![deployment](_assets\continuous_deployment.png)
